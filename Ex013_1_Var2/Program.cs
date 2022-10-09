@@ -8,7 +8,7 @@ int EnterNumber()
         while(true)
         {
             Console.Write("Введите число: ");
-            if(int.TryParse(Console.ReadLine(), out number));
+            if(int.TryParse(Console.ReadLine(), out number))
                 break;
             Console.WriteLine($"Ошибка ввода!");
         }
