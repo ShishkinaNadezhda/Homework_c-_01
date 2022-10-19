@@ -9,7 +9,10 @@ int C = UserInput("Введите третье число: ", "Ошибка!");
 
 Console.WriteLine($"Стороны треугольника: {A}, {B}, {C}");
 
-TriangleCheck(A, B, C);
+bool result = TriangleCheck(A, B, C);
+
+if (result) Console.Write("Это треугольник");
+else Console.WriteLine("Это не треугольник");
 
 static int UserInput(string message, string errormessage)
 {
@@ -28,14 +31,8 @@ while(true)
     }
 }
 
-static void TriangleCheck(int A, int B, int C)
+static bool TriangleCheck(int A, int B, int C)
 {
-    if (A < (B + C) && B < (A + C) && C <(A + B))
-    {
-        Console.Write("Это треугольник");
-    }
-    else
-    {
-        Console.WriteLine("Это не треугольник");
-    }
+    if (A < (B + C) && B < (A + C) && C <(A + B)) return true;
+    return false;
 }
