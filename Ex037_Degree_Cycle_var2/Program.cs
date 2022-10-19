@@ -4,10 +4,10 @@
 //  2, 4 -> 16
 
 Console.Write("Введите число A ");
-int A = int.Parse(Console.ReadLine());
+int A = int.Parse(Console.ReadLine() ?? "");
 
 Console.Write("Введите число B ");
-int B = int.Parse(Console.ReadLine());
+int B = int.Parse(Console.ReadLine() ?? "");
 
 Console.WriteLine($"{A} в степени {B} = {Pow(A, B)}");
 
