@@ -10,7 +10,7 @@ string GetNumber(int N)
     while (N > 0)
     {
         int count = N % 2;
-        FinishNumber = Convert.ToString(count) + FinishNumber;
+        FinishNumber = count + FinishNumber;
         N = N / 2;
 
     }
