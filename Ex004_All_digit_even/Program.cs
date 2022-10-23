@@ -3,10 +3,11 @@ Console.Write("Введите число: ");
 string userInput = Console.ReadLine() ?? "";
 int userNumber = int.Parse(userInput);
 
+Console.Write($"{userNumber} -> ");
 int i = 0;
 
 while(i < userNumber)
 {
     i += 2;
-    Console.WriteLine(i + "");
+    Console.Write($" {i}, ");
 }
