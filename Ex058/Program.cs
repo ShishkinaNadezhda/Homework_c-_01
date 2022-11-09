@@ -34,7 +34,7 @@ double[,] GetArray(int m, int n, int minValue, int maxValue)
         {
             //Convert.ToDouble(rnd.Next(-100, 100)/10.0)
             //new Random().NextDouble() * 10
-            result[i, j] = Convert.ToDouble(rnd.Next(minValue, maxValue)/10.0);
+            result[i, j] = Convert.ToDouble(rnd.Next(minValue, maxValue + 1)/10.0);
            // Console.Write("{0,6:F2}", result[i, j]);
         }
     }
