@@ -1,4 +1,4 @@
-﻿// развернуть массив
+﻿// развернуть массив (два способа)
 
 int[] array = GetArray(10, 0, 10);
 Console.WriteLine(String.Join(" ", array));
