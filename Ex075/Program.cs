@@ -6,6 +6,7 @@
 Console.Write("Введите натуральное число больше 1: ");
 int n = int.Parse(Console.ReadLine() ?? "");
 
+Console.Write($"N = {n} -> ");
 PrintNaturals(n);
 
 void PrintNaturals(int n)
@@ -20,4 +21,9 @@ void PrintNaturals(int n)
         PrintNaturals(n - 1);
     }
 }
+/*Console.Write($"N = {n} -> ");
+if (n != 1)
+    {
+        Console.Write(", ");
+    }*/
 
